@@ -1,6 +1,6 @@
 # TensorFlow Serving using Docker
 
-### Hosting pretrained Object Detection model Tensorflow Serving, also create a Rest API.
+### Hosting a custom trained Object Detection model Tensorflow Serving, also create a Rest API.
 
 In RetinaNet, an one-stage detector, by using Focal loss, lower loss is contributed by “easy” negative samples so that the loss is focusing on “hard” samples, which improves the prediction accuracy. With Resnet+FPN as the backbone for feature extraction, plus two task-specific subnetworks for classification and bounding box regression, forming the RetinaNet, which achieves state-of-the-art performance, outperforms Faster-RCNN, the well-known two-stage detectors.
 
