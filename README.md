@@ -19,7 +19,7 @@ Steps to host an OD model on Tensorflow serving using Docker:
 
 
 ### Creating a Flask API
-  All the commands mentioned below are to be executed within the Target Directory.
+  All the commands mentioned below are to be executed within the Target Directory(/etc/object-detection/model/).
 - Run the Flask API inference file using: `python3 flask_api_prediction.py`
 - Run requests_flask.py to make post request to image url using: `python3 requests_flask.py --img_url=<link to Image>`
   It will be saved under a default name '1234.jpg', in the target directory.
