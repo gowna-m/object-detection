@@ -15,7 +15,7 @@ Steps to host an OD model on Tensorflow serving using Docker:
 - Run tf serving on the docker image using run_tf_serving.sh: `run_tf_serving.sh file($ tensorflow_model_server --port=8601 --rest_api_port=8602 --model_name=retinanet_od --model_base_path=/etc/object-detection/model/retinanet_od`
 - Run `docker ps -a` to get list of running docker containers. Using the corresponding container id, Run: `docker exec -it <id> /bin/bash` to get into the docker image.
 - Predictions are viewed by running the client file(of the corresponding model architecture) using `$ python3 retinanet_client.py --server=127.0.0.1:8601 --img_path=/etc/object-detection/model/image-name.jpg` or you can use, `python3 retinanet_client_copy.py --server=127.0.0.1:8601 --img_path=/etc/object-detection/model/image-name.jpg`
-- The result will be saved in the target directory.
+- The result will be saved in the target directory as out.jpg image file.
 
 
 ### Creating a Flask API
